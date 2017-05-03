@@ -37,27 +37,27 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  returnArray = []
+  return_array = []
   index = array.length
   i = 0
   while i < array.length
-    returnArray << array[index - 1]
+    return_array << array[index - 1]
     i += 1
     index -= 1
   end
-  returnArray
+  return_array
 end
 
 def kesha_maker(array)
-  returnArray = []
-  splitWord = []
+  return_array = []
+  split_word = []
   array.each do |element|
-    splitWord = element.split("")
-    splitWord[2] = "$"
-    splitWord = splitWord.join("")
-    returnArray << splitWord
+    split_word = element.split("")
+    split_word[2] = "$"
+    split_word = split_word.join("")
+    return_array << split_word
   end
-  returnArray
+  return_array
 end
 
 def find_a(array)
@@ -75,13 +75,13 @@ def sum_array(array)
 end
 
 def add_s(array)
-  returnArray = []
+  return_array = []
   array.each do |element|
     if element == "feet"
-      returnArray << element
+      return_array << element
     else
-      returnArray << element + "s"
+      return_array << element + "s"
     end
   end
-  returnArray
+  return_array
 end
